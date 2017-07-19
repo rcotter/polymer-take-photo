@@ -1,0 +1,29 @@
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+
+<dom-module id="create-object-url">
+  <script>
+    class CreateObjectUrl extends Polymer.Element {
+      static get is() { return 'create-object-url'; }
+
+      static get properties() {
+        return {
+          object: {
+            type: Object
+          },
+          url: {
+            type: String,
+            notify: true,
+            computed: '_objectChanged(object)'
+          }
+        }
+      }
+
+      _objectChanged(object) {
+        return URL.createObjectURL(object);
+      }
+    }
+
+    customElements.define(CreateObjectUrl.is, CreateObjectUrl);
+  </script>
+</dom-module>

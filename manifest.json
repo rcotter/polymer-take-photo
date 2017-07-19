@@ -1,0 +1,7 @@
+{
+  "name": "polymer-take-photo",
+  "short_name": "polymer-take-photo",
+  "description": "Take a photo using brower API",
+  "start_url": "/",
+  "display": "standalone"
+}
