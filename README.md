@@ -1,6 +1,6 @@
 # \<polymer-take-photo\>
 
-Take a photo using browser media capture and streams [API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API)
+Take a photo using browser [media capture and streams API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API). To be sure, use Chrome.
 
 ## Install the Polymer-CLI
 
@@ -9,25 +9,5 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 ## Viewing Your Application
 
 ```
-$ polymer serve
+$ polymer serve --open
 ```
-
-## Building Your Application
-
-```
-$ polymer build
-```
-
-This will create builds of your application in the `build/` directory, optimized to be served in production. You can then serve the built versions by giving `polymer serve` a folder to serve from:
-
-```
-$ polymer serve build/default
-```
-
-## Running Tests
-
-```
-$ polymer test
-```
-
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
